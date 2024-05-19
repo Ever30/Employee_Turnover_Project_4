@@ -78,28 +78,6 @@ The name of the company that this data came from is not named due to privacy rea
 - 2016-2020 are pre-/early pandemic years but work-from-home or flexible hours as additional employee incentives are not mentioned in the dataset.
 
 
-## Kaggle metrics:
-This score is calculated by Kaggle.
-
-### Completeness · 100%
-
-✔ Subtitle
-✔ Tag
-✔ Description
-✔ Cover Image
-
-### Credibility · 67%
-
-✘ Source/Provenance
-✔ Public Notebook
-✔ Update Frequency
-
-### Compatibility · 50%
-
-✔ License
-✔ File Format
-✘ File Description
-✘ Column Description
 
 ## Sources:
 
