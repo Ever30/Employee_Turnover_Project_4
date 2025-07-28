@@ -18,12 +18,28 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
         /* Style for the iframe */
         iframe {
-            width: 80%;
+            width: 100%;
             height: 450px;
             border: none;
-            overflow: auto;
+        }
+        /* Add margin-top for h1 and h2 elements */
+        h1 {
+            margin-top: 20px;
+        }
+        h2 {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -31,122 +47,122 @@
     <div class="navbar">
         <a href="#home">Home</a>
         <a href="#logisticR">Logistic Regression Analysis</a>
-        <a href="#SQL & Databricks">SQL & Databricks</a>
-        <a href="#Neural Network Model">Neural Network Model</a>
-        <a href="#SVM">SVM</a>
-        <a href="#Tableau">Tableau</a>
-        <!-- More links can be added here -->
+        <a href="#SQL-Databricks">SQL & Databricks</a>
+        <a href="#neural-network">Neural Network Model</a>
+        <a href="#svm">SVM</a>
+        <a href="#tableau">Tableau</a>
     </div>
 
-    <div id="home">
-        <h1>Welcome!</h1>
-        <p1>Employee turnover is an important aspect that all businesses must attend to. It's continued success depends heavily on the ability to retain employees and establish a healthy working enviroment.</p>
-        <p2>But how can companies identify who is at risk of leaving and who isn't? It can prove to be a quite harrowing task to make these predictions as there can be so many factors that affects an employee's decision</p2>
-        <h1>OUR MISSION</h1>
-        <p3>We want to provide with a machine learning model that performs well in identifying and predicting employees who are at risk of leaving a company.</p3>
-        <p4>We are showcasing various information and a number of machine learning models that will give insight on employee retention while demonstrating some of the different methods we have learned in the bootcamp. </p4>
-        <h1>THE DATA</h2>
-        <p5>This database is from a large US company (no name given for privacy reasons). The management department is worried about the relatively high turnover. They want to find ways to reduce the number of employees leaving the company and to better understand the situation, which employees are more likely to leave, and why.
-            The data The HR department has assembled data on almost 10,000 employees who left the company between 2016-2020. They used information from exit interviews, performance reviews, and employee records.</p5>
-                <p6>The data is defined:</p6>
-                <ul>
-                    <li> Department - the department the employee belongs to.</li>
-                    <li> Promoted - If the employee was promoted in the previous 24 months.</li>
-                    <li> Review - The composite score the employee received in their last evaluation.</li>
-                    <li> Projects - How many projects the employee is involved in.</li>
-                    <li> Salary - For confidentiality reasons, salary comes in three tiers: low, medium, high.</li>
-                    <li> Tenure - How many years the employee has been at the company.</li>
-                    <li> Satifaction - A measure of employee satisfaction from surveys.</li>
-                    <li> Bonus - If the employee received a bonus in the previous 24 months.</li>
-                    <li> Avg_hrs_month - The average hours the employee worked in a month.</li>
-                    <li> Left - If the employee ended up leaving.</li>
-                </ul>
-            <h4>OUR TEAM</h4>
-            <p7>We have a dedicated team with memebrs who have complied a number of models and methods that help analyze and understand the data and the models as well. </p7>
-                <ul>
-                    <li>Aman | Creation of neural netwrok model.</li>
-                    <li>David | Creation of the SVM model.</li>
-                    <li>Dylan | Creation of our Tableau dashboard.</li>
-                    <li>Everardo | Utilization of SQL and Databricks.</li>
-                    <li>Julio | Creation of the logistic regression model.</li>
-                </ul>
-            <h4>Link to our Dataset!</h4>
-            <a href="https://www.kaggle.com/datasets/marikastewart/employee-turnover"> Kaggle.com</a>
+    <div id="home" class="section active">
+        <h1>WELCOME!</h1>
+        <p>Employee turnover is an important aspect that all businesses must attend to. Its continued success depends heavily on the ability to retain employees and establish a healthy working environment.</p>
+        <p>But how can companies identify who is at risk of leaving and who isn't? It can prove to be a quite harrowing task to make these predictions as there can be so many factors that affect an employee's decision.</p>
+        <h2>OUR MISSION</h2>
+        <p>We want to provide a machine learning model that performs well in identifying and predicting employees who are at risk of leaving a company.</p>
+        <p>We are showcasing various information and a number of machine learning models that will give insight into employee retention while demonstrating some of the different methods we have learned in the bootcamp.</p>
+        <h2>THE DATA</h2>
+        <p>This database is from a large US company (no name given for privacy reasons). The management department is worried about the relatively high turnover. They want to find ways to reduce the number of employees leaving the company and to better understand the situation: which employees are more likely to leave, and why.</p>
+        <p>The HR department has assembled data on almost 10,000 employees who left the company between 2016-2020. They used information from exit interviews, performance reviews, and employee records.</p>
+        <p>The data is defined:</p>
+        <ul>
+            <li>Department - the department the employee belongs to.</li>
+            <li>Promoted - If the employee was promoted in the previous 24 months.</li>
+            <li>Review - The composite score the employee received in their last evaluation.</li>
+            <li>Projects - How many projects the employee is involved in.</li>
+            <li>Salary - For confidentiality reasons, salary comes in three tiers: low, medium, high.</li>
+            <li>Tenure - How many years the employee has been at the company.</li>
+            <li>Satisfaction - A measure of employee satisfaction from surveys.</li>
+            <li>Bonus - If the employee received a bonus in the previous 24 months.</li>
+            <li>Avg_hrs_month - The average hours the employee worked in a month.</li>
+            <li>Left - If the employee ended up leaving.</li>
+        </ul>
+        <h2>OUR TEAM</h2>
+        <p>We have a dedicated team with members who have compiled a number of models and methods that help analyze and understand the data and the models as well.</p>
+        <ul>
+            <li>Aman | Creation of neural network model.</li>
+            <li>David | Creation of the SVM model.</li>
+            <li>Dylan | Creation of our Tableau dashboard.</li>
+            <li>Everardo | Utilization of SQL and Databricks.</li>
+            <li>Julio | Creation of the logistic regression model.</li>
+        </ul>
+        <h2>Link to our Dataset!</h2>
+        <a href="https://www.kaggle.com/datasets/marikastewart/employee-turnover" target="_blank">Kaggle.com</a>
     </div>
 
-    <div id="logisticR" style="display:none;">
-        <img src = "Images/log1.png">
-        <img src = "Images/log2.png">
-        <img src = "Images/log3.png">
-        <img src = "Images/log4.png">
-        <img src = "Images/log5.png">
-        <img src = "Images/imbalanced.png">
+    <div id="logisticR" class="section">
+        <img src="Images/log1.png" alt="Logistic Regression Analysis Image 1">
+        <img src="Images/log2.png" alt="Logistic Regression Analysis Image 2">
+        <img src="Images/log3.png" alt="Logistic Regression Analysis Image 3">
+        <img src="Images/log4.png" alt="Logistic Regression Analysis Image 4">
+        <img src="Images/log5.png" alt="Logistic Regression Analysis Image 5">
+        <img src="Images/imbalanced.png" alt="Imbalanced Data Image">
         <h2>Logistic Regression Analysis Notebook</h2>
         <iframe src="turnover_logisticR.html" title="Interactive Notebook"></iframe>
     </div>
 
-    <div id="SQL & Databricks" style="display: none;">
-        <img src="Images/bricks_1.png">
+    <div id="SQL-Databricks" class="section">
+        <img src="Images/bricks_1.png" alt="SQL & Databricks Image 1">
         <br />
-        <img src="Images/bricks_2.png">
+        <img src="Images/bricks_2.png" alt="SQL & Databricks Image 2">
         <br />
-        <img src="Images/bricks_3.png">
+        <img src="Images/bricks_3.png" alt="SQL & Databricks Image 3">
         <br />
-        <img src="Images/bricks_4.png">
+        <img src="Images/bricks_4.png" alt="SQL & Databricks Image 4">
         <h3>SQL & Databricks Notebook</h3>
-        <iframe src="SQL\Project_4.html" title="SQL & Databricks Presentation"></iframe>
-        
+        <iframe src="SQL/Project_4.html" title="SQL & Databricks Presentation"></iframe>
     </div>
 
-    <div id="Neural Network Model" style="display: none;">
-    <img src="Images/neural_1.png">
-    <hr>
-    <img src="Images/neural_2.png">
-    <img src="Images/neural_3.png">
-    <hr>
-    <img src="Images/nn2.png">
-    <hr>
-    <img src="Images/nn3.png">
-    <hr>
-    <img src="Images/nn4.png">
-    <hr>
-    <img src="Images/nn5.png">
-    <hr>
-    <img src="Images/nn6.png">
-    <hr>
-    <h4>Neural Network Model Notebook</h4>
-    <iframe src="neural_network_model.html" title="Neural Network Model"></iframe>
-
+    <div id="neural-network" class="section">
+        <img src="Images/neural_1.png" alt="Neural Network Model Image 1">
+        <hr>
+        <img src="Images/neural_2.png" alt="Neural Network Model Image 2">
+        <img src="Images/neural_3.png" alt="Neural Network Model Image 3">
+        <hr>
+        <img src="Images/nn2.png" alt="Neural Network Model Image 4">
+        <hr>
+        <img src="Images/nn3.png" alt="Neural Network Model Image 5">
+        <hr>
+        <img src="Images/nn4.png" alt="Neural Network Model Image 6">
+        <hr>
+        <img src="Images/nn5.png" alt="Neural Network Model Image 7">
+        <hr>
+        <img src="Images/nn6.png" alt="Neural Network Model Image 8">
+        <hr>
+        <h4>Neural Network Model Notebook</h4>
+        <iframe src="neural_network_model.html" title="Neural Network Model"></iframe>
     </div>
 
-    <div id="SVM" style="display: none;">
-    <img src="Images/svm1.png">
-    <img src="Images/svm2.png">
-    <img src="Images/svm3.png">
-    <img src="Images/svm4.png">
-    <h5>SVM Notebook </h5>
-    <iframe src= "turnover_svm.html" title = "SVM"></iframe>
+    <div id="svm" class="section">
+        <img src="Images/svm1.png" alt="SVM Image 1">
+        <img src="Images/svm2.png" alt="SVM Image 2">
+        <img src="Images/svm3.png" alt="SVM Image 3">
+        <img src="Images/svm4.png" alt="SVM Image 4">
+        <h5>SVM Notebook</h5>
+        <iframe src="turnover_svm.html" title="SVM"></iframe>
     </div>
 
-    <div id="Tableau" style="display: none;">
-    <h6>Tableau</h6>
-    <a href="https://public.tableau.com/views/Project4_17149542860070/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" target="_blank">Open Dashboard</a>
+    <div id="tableau" class="section">
+        <h6>Tableau</h6>
+        <a href="https://public.tableau.com/views/Project4_17149542860070/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" target="_blank">Open Dashboard</a>
     </div>
 
     <script>
-        // Simple JavaScript for navigation
+        // JavaScript for navigation
         document.querySelectorAll('.navbar a').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 // Hide all sections
-                document.querySelectorAll('div[id]').forEach(div => {
-                    div.style.display = 'none';
+                document.querySelectorAll('.section').forEach(section => {
+                    section.classList.remove('active');
                 });
                 // Show the clicked section
                 const sectionId = this.getAttribute('href').substring(1);
-                document.getElementById(sectionId).style.display = 'block';
+                document.getElementById(sectionId).classList.add('active');
             });
         });
+
+        // Show the home section by default on page load
+        document.getElementById('home').classList.add('active');
     </script>
 </body>
 </html>
